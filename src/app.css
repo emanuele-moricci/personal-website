@@ -1,2 +1,28 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin '@tailwindcss/typography';
+
+@layer base {
+	/**
+        |==============================================|
+        | Tailwind CSS Variables
+        |==============================================|
+    */
+
+	:root {
+		--main-background: hsl(0 0% 0%);
+		--main-muted-background: hsl(120 4% 10%);
+		--main-color: hsl(120 100% 75%);
+		--main-muted-color: hsl(120 4% 10%);
+		--border-color: hsl(120 100% 20%);
+	}
+
+	/**
+        |----------------------------------------------|
+        | Base Styles
+        |----------------------------------------------|
+    */
+
+	body {
+		@apply min-h-screen bg-(--main-background) text-(--main-color);
+	}
+}

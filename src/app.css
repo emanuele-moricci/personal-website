@@ -18,6 +18,47 @@
 
 	/**
         |----------------------------------------------|
+        | Animations
+        |----------------------------------------------|
+    */
+
+	@keyframes flicker {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		80% {
+			opacity: 0.7;
+		}
+		90% {
+			opacity: 0.4;
+		}
+	}
+	.flicker {
+		animation: flicker 2s infinite;
+	}
+
+	/**
+        |----------------------------------------------|
+        | Custom Styles
+        |----------------------------------------------|
+    */
+
+	.scanlines::after {
+		content: "";
+		position: fixed;
+		inset: 0;
+		background: repeating-linear-gradient(
+			to bottom,
+			transparent 0px,
+			transparent 2px,
+			rgba(0, 255, 0, 0.03) 5px
+		);
+		pointer-events: none;
+	}
+
+	/**
+        |----------------------------------------------|
         | Base Styles
         |----------------------------------------------|
     */

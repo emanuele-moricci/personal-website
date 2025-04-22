@@ -1,7 +1,7 @@
-<div class="border fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-2 px-3">
+<div class="border-2 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-2 px-3">
     <h4 class="absolute left-1 -top-3.5 bg-black px-1">Welcome Screen</h4>
 
-    <p class="text-gray-500">My name is...</p>
+    <p class="text-muted-foreground">My name is...</p>
     <p class="text-xs font-mono whitespace-pre m-2">
 $$$$$$$$\                                                       $$\
 $$  _____|                                                      $$ |
@@ -12,8 +12,4 @@ $$ |      $$ | $$ | $$ |$$  __$$ |$$ |  $$ |$$ |  $$ |$$   ____|$$ |$$   ____|
 $$$$$$$$\ $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\
 \________|\__| \__| \__| \_______|\__|  \__| \______/  \_______|\__| \_______|
     </p>
-
-
-
-
 </div>

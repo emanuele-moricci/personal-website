@@ -1,21 +1,98 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
+@plugin "tailwindcss-animate";
 
-@layer base {
+@theme {
 	/**
         |==============================================|
-        | Tailwind CSS Variables
+        | Tailwind CSS Colors
         |==============================================|
     */
 
-	:root {
-		--main-background: hsl(0 0% 0%);
-		--main-muted-background: hsl(120 4% 10%);
-		--main-color: hsl(120 100% 75%);
-		--main-muted-color: hsl(120 4% 10%);
-		--border-color: hsl(120 100% 20%);
+	--color-background: hsl(0 0% 0%);
+	--color-muted-background: hsl(120 4% 10%);
+	--color-foreground: hsl(120 100% 75%);
+	--color-muted-foreground: var(--color-gray-500);
+
+	--accent: hsl(216 34% 17%);
+	--accent-foreground: hsl(210 40% 98%);
+
+	--popover: 224 71% 4%;
+	--popover-foreground: 215 20.2% 65.1%;
+
+	--color-border: hsl(120 100% 20%);
+	--color-input: hsl(216 34% 17%);
+
+	--color-card: hsl(224 71% 4%);
+	--color-card-foreground: hsl(213 31% 91%);
+
+	--color-primary: hsl(210 40% 98%);
+	--color-primary-foreground: hsl(222.2 47.4% 1.2%);
+
+	--color-secondary: hsl(222.2 47.4% 11.2%);
+	--color-secondary-foreground: hsl(210 40% 98%);
+
+	--color-destructive: hsl(359 51% 48%);
+	--color-destructive-foreground: hsl(210 40% 98%);
+
+	--color-ring: hsl(216 34% 17%);
+
+	/**
+        |==============================================|
+        | Tailwind CSS Modifiers
+        |==============================================|
+    */
+
+	--radius: 0.5rem;
+	--radius-xl: calc(var(--radius) + 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-sm: calc(var(--radius) - 4px);
+
+	--container-2xl: 1400px;
+
+	/* --font-sans: we'll see */
+
+	/**
+        |==============================================|
+        | Tailwind CSS Animations
+        |==============================================|
+    */
+
+	--animate-accordion-down: accordion-down 0.2s ease-out;
+	@keyframes accordion-down {
+		from {
+			height: 0;
+		}
+		to {
+			height: var(--bits-accordion-content-height);
+		}
 	}
 
+	--animate-accordion-up: accordion-up 0.2s ease-out;
+	@keyframes accordion-up {
+		from {
+			height: var(--bits-accordion-content-height);
+		}
+		to {
+			height: 0;
+		}
+	}
+
+	--animate-caret-blink: caret-blink 1.25s ease-out infinite;
+	@keyframes caret-blink {
+		0%,
+		70%,
+		100% {
+			opacity: 1;
+		}
+		20%,
+		50% {
+			opacity: 0;
+		}
+	}
+}
+
+@layer base {
 	/**
         |----------------------------------------------|
         | Animations
@@ -47,7 +124,13 @@
         |----------------------------------------------|
     */
 
+	* {
+		@apply border-border;
+	}
+
 	body {
-		@apply min-h-screen bg-(--main-background) text-(--main-color);
+		@apply min-h-screen bg-background text-foreground;
+
+		font-feature-settings: "rlig" 1, "calt" 1;
 	}
 }

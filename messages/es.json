@@ -1,4 +1,11 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from es!"
+	"home": {
+		"welcomeScreen": "Pantalla de bienvenida"
+	},
+	"home_myNameIs": "Mi nombre es...",
+	"locale_en": "Inglés",
+	"locale_es": "Español",
+	"locale_it": "Italiano",
+	"home_welcome": "Pantalla de bienvenida"
 }

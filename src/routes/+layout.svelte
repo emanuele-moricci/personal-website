@@ -11,6 +11,16 @@ let { children } = $props();
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-Light.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-LightItalic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-MediumItalic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-SemiBoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/MonaspaceKrypton-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
 </svelte:head>
 
 <div class="animate-crtv-flash"></div>

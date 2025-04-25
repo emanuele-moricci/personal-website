@@ -55,11 +55,11 @@ function closeAndFocusTrigger() {
 </script>
 
    <Popover.Root bind:open>
-    <Popover.Trigger bind:ref={triggerRef}>
+    <Popover.Trigger bind:ref={triggerRef} class={cn(className)}>
      {#snippet child({ props })}
       <Button
-       variant="outline"
-       class={cn("justify-between", className)}
+       variant="outline_ghost"
+       class="justify-between"
        {...props}
        role="combobox"
        aria-expanded={open}

@@ -2,6 +2,84 @@
 @plugin '@tailwindcss/typography';
 @plugin "tailwindcss-animate";
 
+/**
+	|==============================================|
+	| Fontfaces
+	|==============================================|
+*/
+
+/* ─── MonaspaceKrypton @font-face ─── */
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-Light.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-LightItalic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-Italic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-Medium.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-MediumItalic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-SemiBold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-SemiBoldItalic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-Bold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MonaspaceKrypton";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/MonaspaceKrypton-BoldItalic.woff2") format("woff2");
+}
+
 @theme {
 	/**
         |==============================================|
@@ -53,7 +131,7 @@
 
 	--container-2xl: 1400px;
 
-	/* --font-sans: we'll see */
+	--font-sans: "MonaspaceKrypton", monospace;
 
 	/**
         |==============================================|

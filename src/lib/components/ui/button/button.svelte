@@ -15,6 +15,7 @@ export const buttonVariants = tv({
 				"bg-destructive text-destructive-foreground hover:bg-destructive/90",
 			outline:
 				"border-input bg-background hover:bg-foreground/70 hover:text-background border",
+			outline_ghost: "border-input bg-background",
 			secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
 			ghost: "hover:bg-foreground hover:text-background",
 			link: "text-primary underline-offset-4 hover:underline",

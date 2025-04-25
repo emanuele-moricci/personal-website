@@ -20,7 +20,7 @@ $$$$$$$$\ $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\
 \________|\__| \__| \__| \_______|\__|  \__| \______/  \_______|\__| \_______|
     </p>
     <div class="flex items-center">
-        <p class="w-2/3 text-justify delay-[0.15s] animate-typing-fast">
+        <p class="text-justify w-0 !delay-[0.40s] animate-typing-fast">
             {m.home_hoAmI()}
             <span class="border-l border-4 ml-0.5 animate-caret-blink"></span>
         </p>

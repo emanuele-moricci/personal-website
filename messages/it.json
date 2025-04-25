@@ -5,5 +5,8 @@
 	"locale_es": "Spagnolo",
 	"locale_it": "Italiano",
 	"home_welcome": "Schermo di benvenuto",
-	"layout_selectLng": "Seleziona una lingua"
+	"layout_selectLng": "Seleziona una lingua",
+	"home_aboutMe": "Su di me",
+	"home_hoAmI": "Sono uno sviluppatore software, team leader tecnico e appassionato di informatica in generale.",
+	"home_whatIKnow": "Esperienza"
 }

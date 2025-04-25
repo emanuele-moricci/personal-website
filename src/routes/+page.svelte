@@ -47,7 +47,7 @@ $$$$$$$$\ $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\
                 <span class="flex items-center gap-2"><GitBranch size={16} />main</span>
             </span>
             <span class="ml-2">
-                routes/+page.svelte
+                routes/+page.svelt<a href="/easter-egg" class="hover:underline">e</a>
             </span>
         </span>
         <span class="flex items-center">

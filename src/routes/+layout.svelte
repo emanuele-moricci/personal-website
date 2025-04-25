@@ -13,6 +13,8 @@ let { children } = $props();
     <title>{title}</title>
 </svelte:head>
 
+<div class="animate-crtv-flash"></div>
+
 <LocaleSwitcher />
 <Marquee {title} />
 

@@ -61,23 +61,13 @@
         |==============================================|
     */
 
-	--animate-accordion-down: accordion-down 0.2s ease-out;
-	@keyframes accordion-down {
-		from {
-			height: 0;
+	--animate-quick-in: quick-fade-in 0.5s ease-out forwards;
+	@keyframes quick-fade-in {
+		0% {
+			opacity: 0;
 		}
-		to {
-			height: var(--bits-accordion-content-height);
-		}
-	}
-
-	--animate-accordion-up: accordion-up 0.2s ease-out;
-	@keyframes accordion-up {
-		from {
-			height: var(--bits-accordion-content-height);
-		}
-		to {
-			height: 0;
+		100% {
+			opacity: 1;
 		}
 	}
 
@@ -93,20 +83,117 @@
 			opacity: 0;
 		}
 	}
+
+	--animate-terminal-open: terminal-open 0.2s ease-out forwards;
+	@keyframes terminal-open {
+		0% {
+			transform: scaleX(0) scaleY(0);
+			opacity: 0;
+		}
+		95% {
+			transform: scaleX(1.1) scaleY(1.1);
+			opacity: 1;
+		}
+		100% {
+			transform: scaleX(1) scaleY(1);
+			opacity: 1;
+		}
+	}
+
+	--animate-flicker: flicker 0.34s infinite;
+	--animate-flicker-text: flicker 0.085s infinite;
+	@keyframes flicker {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.9;
+		}
+	}
+
+	--animate-glow: glow 1s ease-in-out infinite alternate;
+	@keyframes glow {
+		from {
+			text-shadow: 0 0 8px var(--color-foreground);
+		}
+		to {
+			text-shadow: 0 0 4px var(--color-foreground);
+		}
+	}
+
+	--animate-typing: typing 1s steps(40) forwards;
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+		to {
+			width: 100%;
+		}
+	}
+
+	--animate-flash: flash 0.25s ease-out forwards;
+	@keyframes flash {
+		0% {
+			opacity: 0;
+			transform: scaleX(0) scaleY(0);
+		}
+		55% {
+			opacity: 1;
+			transform: scaleX(1) scaleY(0.02);
+		}
+		60% {
+			opacity: 1;
+			transform: scaleX(1) scaleY(0.05);
+		}
+		99% {
+			opacity: 1;
+		}
+		100% {
+			transform: scaleX(1) scaleY(1);
+			opacity: 0;
+		}
+	}
 }
 
 @layer base {
+	/**
+		|----------------------------------------------|
+		| Base Styles
+		|----------------------------------------------|
+	*/
+
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply min-h-screen bg-background text-foreground p-4;
+
+		font-feature-settings: "rlig" 1, "calt" 1;
+	}
+}
+
+@layer utilities {
 	/**
         |----------------------------------------------|
         | Animations
         |----------------------------------------------|
     */
 
-	/**
-        |----------------------------------------------|
-        | Custom Styles
-        |----------------------------------------------|
-    */
+	.animate-crtv-flash {
+		@apply animate-flash;
+
+		position: fixed;
+		inset: 0;
+		background: white;
+		pointer-events: none;
+		z-index: 50;
+
+		transform-origin: center;
+
+		text-shadow: 0 0 8px var(--color-foreground);
+	}
 
 	.scanlines::after {
 		content: "";
@@ -119,21 +206,15 @@
 			rgba(0, 255, 0, 0.03) 5px
 		);
 		pointer-events: none;
+
+		opacity: 0;
+		@apply animate-quick-in;
 	}
 
-	/**
-        |----------------------------------------------|
-        | Base Styles
-        |----------------------------------------------|
-    */
+	.animate-typing-fast {
+		@apply animate-typing;
 
-	* {
-		@apply border-border;
-	}
-
-	body {
-		@apply min-h-screen bg-background text-foreground p-4;
-
-		font-feature-settings: "rlig" 1, "calt" 1;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 }

@@ -59,7 +59,7 @@ function closeAndFocusTrigger() {
      {#snippet child({ props })}
       <Button
        variant="outline"
-       class="justify-between"
+       class={cn("justify-between", className)}
        {...props}
        role="combobox"
        aria-expanded={open}

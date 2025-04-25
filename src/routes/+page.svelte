@@ -47,7 +47,7 @@ $$$$$$$$\ $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\
                 <span class="flex items-center gap-2"><GitBranch size={16} />main</span>
             </span>
             <span class="ml-2">
-                index.svelte
+                routes/+page.svelte
             </span>
         </span>
         <span class="flex items-center">

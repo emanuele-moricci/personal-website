@@ -1,20 +1,20 @@
 <script lang="ts">
-	import { Command as CommandPrimitive } from "bits-ui";
-	import { cn } from "$lib/utils.js";
+import { cn } from "$lib/utils.js";
+import { Command as CommandPrimitive } from "bits-ui";
 
-	let {
-		ref = $bindable(null),
-		class: className,
-		children,
-		heading,
-		...restProps
-	}: CommandPrimitive.GroupProps & {
-		heading?: string;
-	} = $props();
+let {
+	ref = $bindable(null),
+	class: className,
+	children,
+	heading,
+	...restProps
+}: CommandPrimitive.GroupProps & {
+	heading?: string;
+} = $props();
 </script>
 
 <CommandPrimitive.Group
-	class={cn("text-foreground overflow-hidden p-1", className)}
+	class={cn("bg-background text-foreground overflow-hidden p-1", className)}
 	bind:ref
 	{...restProps}
 >

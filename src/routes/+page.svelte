@@ -31,7 +31,7 @@ $$$$$$$$\ $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\
     <div class="mt-6 border px-3 py-2 flex items-center">
         <h5>### <span class="bg-secondary p-1">{m.home_aboutMe()}</span></h5>
         <div class="ml-auto flex justify-end items-center gap-4">
-            <Button href="#" variant="ghost" class="p-1"><Lightbulb />{m.home_whatIKnow()}</Button>
+            <Button data-sveltekit-preload-data="hover" href="/experience" variant="ghost" class="p-1"><Lightbulb />{m.home_whatIKnow()}</Button>
             <span class="height-full border"></span>
             <Button href="https://github.com/emanuele-moricci" target="_blank" variant="ghost" class="p-1"><Github />Github</Button>
             <Button href="https://www.linkedin.com/in/emanuele-moricci-777b44173/" target="_blank" variant="ghost" class="p-1"><Linkedin />Linkedin</Button>

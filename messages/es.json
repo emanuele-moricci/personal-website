@@ -10,5 +10,7 @@
 	"home_welcome": "Pantalla de bienvenida",
 	"home_aboutMe": "Sobre mí",
 	"home_hoAmI": "Soy un desarrollador de software, líder de equipo técnico y entusiasta de la informática en general.",
-	"home_whatIKnow": "Experiencia"
+	"home_whatIKnow": "Experiencia",
+	"easteregg_title": "¡Encontraste mi easter egg!",
+	"easteregg_cta": "Volver atrás"
 }

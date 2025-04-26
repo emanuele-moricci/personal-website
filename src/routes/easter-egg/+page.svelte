@@ -46,6 +46,6 @@ import { m } from "@/paraglide/messages.js";
     .... ..--::--:.:-=-+*--=::+*-==--=:::=-+:--*+:.:+: -+=++=----------==---::.:
       ..  -+*=-..-=-==-+=:+=+: =+=-=-=-:-:..=+-:+--:-: +#+-*+==++++++=++++++==--
     </p>
-    <p>You found my easter egg!</p>
-    <Button class="mt-5" variant="outline" href="/">Go Back</Button>
+    <p>{m.easteregg_title()}</p>
+    <Button class="mt-5" variant="outline" href="/">{m.easteregg_cta()}</Button>
 </div>

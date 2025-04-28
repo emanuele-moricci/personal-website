@@ -22,6 +22,8 @@ import { Combobox } from "$lib/components/ui/combobox/index.js";
             setLocale(newLocale as Locale);
         }
     }}
-    class="opacity-0 animate-quick-in delay-200"
+    class="mr-6"
 />
+
+
 

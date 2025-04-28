@@ -3,7 +3,7 @@ import { Button } from "$lib/components/ui/button/index.js";
 import { m } from "@/paraglide/messages.js";
 </script>
 
-<div class="size-screen flex flex-col justify-center items-center gap-2 delay-[0.15s] opacity-0 animate-terminal-open">
+<div class="size-screen flex flex-col mt-20 justify-center items-center gap-2 delay-[0.15s] opacity-0 animate-terminal-open">
     <p class="text-xs font-mono whitespace-pre animate-glow">
 ******+=-:.        -%#%%%#%%%%%%%%%%@@@@@%***++++++++++++++++++++++++=+=========
 *******=-:          .:=*%@@@@@@@@@@@@@@@@@#*******+++++++++++++++++++++++=======

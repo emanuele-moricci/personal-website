@@ -22,7 +22,7 @@ import { Combobox } from "$lib/components/ui/combobox/index.js";
             setLocale(newLocale as Locale);
         }
     }}
-    class="mr-6"
+    class="p-3"
 />
 
 

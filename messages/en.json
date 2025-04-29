@@ -15,5 +15,9 @@
 	"easteregg_title": "You found my easter egg!",
 	"easteregg_cta": "Go back",
 	"about_title": "Experience",
-	"home_title_short": "Home"
+	"home_title_short": "Home",
+	"experience_workstudy": "Where I worked/studied",
+	"experience_technologies": "Technologies I worked with",
+	"experience_pubgit": "Public GitHub",
+	"experience_whoami": "Who am I?"
 }

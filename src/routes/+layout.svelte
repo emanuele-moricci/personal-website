@@ -30,9 +30,11 @@ let { children } = $props();
 
 <div class="animate-crtv-flash"></div>
 
-<div class="w-full absolute top-2 left-4 right-4 flex items-center justify-between opacity-0 animate-quick-in delay-200">
-    <HomeLogo />
-    <LocaleSwitcher />
-</div>
+<div class="delay-[0.15s] opacity-0 animate-quick-in">
+    <div class="w-full absolute top-2 left-4 right-4 flex items-center justify-between opacity-0 animate-quick-in delay-200">
+        <HomeLogo />
+        <LocaleSwitcher />
+    </div>
 
-{@render children()}
+    {@render children()}
+</div>

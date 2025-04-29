@@ -23,12 +23,12 @@ let {
     id="container-box"
     class={
         cn(
-            "border-2 fixed delay-[0.15s] opacity-0 animate-terminal-open",
+            "border-2 fixed",
             className
         )
     }
 >
-<h4 class="absolute left-1 -top-3.5 bg-black px-1 animate-flicker-text border-0"># {title}</h4>
+<h4 id="container-title" class="absolute left-1 -top-3.5 bg-black px-1 animate-flicker-text border-0"># {title}</h4>
     {@render children?.()}
 </div>
 
@@ -36,4 +36,8 @@ let {
 	#container-box {
 		view-transition-name: container-box;
 	}
+
+    #container-title {
+        view-transition-name: container-title;
+    }
 </style>

@@ -5,7 +5,13 @@ import { m } from "@/paraglide/messages.js";
 
 <a href="/" class="flex items-center">
 	<img src="logo.svg" alt="logo" width="50px" />{' '}
-	<span id="home-title" style:--opacity={page.url.pathname === "/" ? 0 : 1}>{m.home_title_short()}</span>
+	<span
+		id="home-title"
+		style:--opacity={page.url.pathname === "/" ? 0 : 1}
+		class={{ 'animate-typing-fast overflow-hidden whitespace-nowrap': page.url.pathname !== '/' }}
+	>
+		{m.home_title_short()}
+	</span>
 </a>
 
 <style>

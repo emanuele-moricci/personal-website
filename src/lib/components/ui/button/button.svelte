@@ -40,11 +40,16 @@ export type ButtonProps = WithElementRef<HTMLButtonAttributes> &
 	WithElementRef<HTMLAnchorAttributes> & {
 		variant?: ButtonVariant;
 		size?: ButtonSize;
+
+		isloading?: boolean;
 	};
 </script>
 
 <script lang="ts">
+	import { navigating } from '$app/state';
 	import { cn } from "$lib/utils.js";
+
+	import { Loading } from "$lib/components/ui/loading/index.js";
 
 	let {
 		class: className,
@@ -53,27 +58,43 @@ export type ButtonProps = WithElementRef<HTMLButtonAttributes> &
 		ref = $bindable(null),
 		href = undefined,
 		type = "button",
+		isloading = false,
 		children,
 		...restProps
 	}: ButtonProps = $props();
+
+	let isNavigatingToHref = $derived(Boolean(href) && navigating.to?.route.id === href);
 </script>
 
 {#if href}
 	<a
 		bind:this={ref}
-		class={cn(buttonVariants({ variant, size }), className)}
+		class={cn('relative', buttonVariants({ variant, size }), className)}
 		{href}
 		{...restProps}
 	>
 		{@render children?.()}
+
+		{@render loading(isloading || isNavigatingToHref)}
 	</a>
 {:else}
 	<button
 		bind:this={ref}
-		class={cn(buttonVariants({ variant, size }), className)}
+		class={cn('relative', buttonVariants({ variant, size }), className)}
 		{type}
 		{...restProps}
 	>
 		{@render children?.()}
+
+		{@render loading(isloading || isNavigatingToHref)}
 	</button>
 {/if}
+
+{#snippet loading(isloading: boolean)}
+	{#if isloading}
+		<div class="absolute inset-0 bg-secondary z-10 pointer-events-none"></div>
+		<div class="absolute inset-0 flex items-center justify-center z-20 cursor-progress">
+			<Loading />
+		</div>
+	{/if}
+{/snippet}

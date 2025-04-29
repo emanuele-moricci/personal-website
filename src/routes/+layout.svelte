@@ -1,8 +1,6 @@
 <script lang="ts">
 import "../app.css";
 
-import { m } from "@/paraglide/messages.js";
-
 import HomeLogo from "@/components/layout/home-logo/home-logo.svelte";
 import LocaleSwitcher from "@/components/layout/locale-switcher/locale-switcher.svelte";
 import Marquee from "@/components/layout/marquee/marquee.svelte";
@@ -36,6 +34,5 @@ let { children } = $props();
     <HomeLogo />
     <LocaleSwitcher />
 </div>
-
 
 {@render children()}

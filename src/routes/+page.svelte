@@ -2,12 +2,11 @@
 import { m } from "@/paraglide/messages.js";
 
 import { Button } from "$lib/components/ui/button/index.js";
+import ContainerBox from "@/components/layout/container-box/container-box.svelte";
 import { GitBranch, Github, Lightbulb, Linkedin } from "@lucide/svelte";
 </script>
 
-<div class="border-2 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-3 px-4 pb-20 delay-[0.15s] opacity-0 animate-terminal-open" style="transform-origin: center;">
-    <h4 class="absolute left-1 -top-3.5 bg-black px-1 animate-flicker-text"># {m.home_welcome()}</h4>
-
+<ContainerBox class="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-3 px-4 pb-20" title={m.home_welcome()}>
     <p class="text-muted-foreground mb-3">## {m.home_myNameIs()}</p>
     <p class="text-xs font-mono whitespace-pre m-2 mb-5 animate-glow">
 $$$$$$$$\                                                       $$\
@@ -62,4 +61,4 @@ $$$$$$$$\ $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\
             </span>
         </span>
     </div>
-</div>
+</ContainerBox>

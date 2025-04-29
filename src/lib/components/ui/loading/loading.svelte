@@ -30,6 +30,6 @@ export type LoadingProps = WithElementRef<BitsSpanAttributes> & {};
 	});
 </script>
 
-<span bind:this={ref} class={cn(className)} {...restProps}>
+<span bind:this={ref} class={cn('text-foreground', className)} {...restProps}>
 	{dots}
 </span>

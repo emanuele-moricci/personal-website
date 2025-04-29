@@ -28,7 +28,7 @@ let {
         )
     }
 >
-<h4 id="container-title" class="absolute left-1 -top-3.5 bg-black px-1 animate-flicker-text border-0"># {title}</h4>
+<h4 id="container-title" class="absolute left-1 -top-3.5 bg-black px-1 animate-flicker-text border-0 animate-typing-fast overflow-hidden whitespace-nowrap"># {title}</h4>
     {@render children?.()}
 </div>
 

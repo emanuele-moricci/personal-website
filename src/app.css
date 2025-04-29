@@ -200,13 +200,13 @@
 		}
 	}
 
-	--animate-typing: typing 1s steps(40) forwards;
+	--animate-typing: typing 0.75s steps(40) forwards;
 	@keyframes typing {
 		from {
 			width: 0;
 		}
 		to {
-			width: 100%;
+			width: calc-size(auto, size);
 		}
 	}
 
@@ -289,10 +289,33 @@
 		@apply animate-quick-in;
 	}
 
-	.animate-typing-fast {
+	.animate-typing-slow {
 		@apply animate-typing;
+		animation-duration: 1s;
 
 		overflow: hidden;
 		white-space: nowrap;
+	}
+
+	.animate-typing-fast {
+		@apply animate-typing;
+		animation-duration: 0.25s;
+
+		overflow: hidden;
+		white-space: nowrap;
+	}
+}
+
+/**
+	|----------------------------------------------|
+	| Accessibility
+	|----------------------------------------------|
+*/
+
+@media (prefers-reduced-motion) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
 	}
 }

@@ -10,7 +10,7 @@ export const buttonVariants = tv({
 	base: "ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
 	variants: {
 		variant: {
-			default: "bg-foreground text-foreground hover:bg-foreground/90",
+			default: "bg-foreground text-background hover:bg-foreground/90",
 			destructive:
 				"bg-destructive text-destructive-foreground hover:bg-destructive/90",
 			outline:
@@ -46,7 +46,7 @@ export type ButtonProps = WithElementRef<HTMLButtonAttributes> &
 </script>
 
 <script lang="ts">
-	import { navigating } from '$app/state';
+	import { navigating, page } from '$app/state';
 	import { cn } from "$lib/utils.js";
 
 	import { Loading } from "$lib/components/ui/loading/index.js";
@@ -64,13 +64,16 @@ export type ButtonProps = WithElementRef<HTMLButtonAttributes> &
 	}: ButtonProps = $props();
 
 	let isNavigatingToHref = $derived(Boolean(href) && navigating.to?.route.id === href);
+	let isActiveHref = $derived(Boolean(href) && page.url.pathname === href);
 </script>
 
 {#if href}
 	<a
 		bind:this={ref}
-		class={cn('relative', buttonVariants({ variant, size }), className)}
+		class={cn('relative', buttonVariants({ variant: isActiveHref ? 'default' : variant, size }), className)}
 		{href}
+		data-navigatingto={isNavigatingToHref}
+		data-active={isActiveHref}
 		{...restProps}
 	>
 		{@render children?.()}

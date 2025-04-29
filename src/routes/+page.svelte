@@ -6,7 +6,7 @@ import ContainerBox from "@/components/layout/container-box/container-box.svelte
 import { GitBranch, Github, Lightbulb, Linkedin } from "@lucide/svelte";
 </script>
 
-<ContainerBox class="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-3 px-4 pb-20" title={m.home_welcome()}>
+<ContainerBox class="w-3/4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-3 px-4 pb-20" title={m.home_welcome()}>
     <p class="text-muted-foreground mb-3">## {m.home_myNameIs()}</p>
     <p class="text-xs font-mono whitespace-pre m-2 mb-5 animate-glow">
 $$$$$$$$\                                                       $$\
@@ -19,7 +19,7 @@ $$$$$$$$\ $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\
 \________|\__| \__| \__| \_______|\__|  \__| \______/  \_______|\__| \_______|
     </p>
     <div class="flex items-center">
-        <p class="text-justify w-0 !delay-[0.25s] animate-typing-fast">
+        <p class="text-justify w-0 !delay-[0.25s] animate-typing-fast text-sm">
             {m.home_hoAmI()}
             <span class="border-l border-4 ml-0.5 animate-caret-blink"></span>
         </p>

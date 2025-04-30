@@ -4,9 +4,9 @@
 		"welcomeScreen": "Pantalla de bienvenida"
 	},
 	"home_myNameIs": "Mi nombre es...",
-	"locale_en": "Inglés",
-	"locale_es": "Español",
-	"locale_it": "Italiano",
+	"locale_en-US": "Inglés",
+	"locale_es-ES": "Español",
+	"locale_it-IT": "Italiano",
 	"home_welcome": "Pantalla de bienvenida",
 	"home_aboutMe": "Sobre mí",
 	"home_hoAmI": "Soy un desarrollador de software, líder de equipo técnico y entusiasta de la informática en general.",

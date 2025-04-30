@@ -1,10 +1,11 @@
 <script lang="ts">
+import { base } from "$app/paths";
 import { page } from "$app/state";
 import { m } from "@/paraglide/messages.js";
 </script>
 
 <a href="/" class="flex items-center gap-1">
-	<img src="logo.gif" alt="logo" width="35px" />{' '}
+	<img src="{base}/logo.gif" alt="logo" width="35px" />{' '}
 	<span
 		id="home-title"
 		style:--opacity={page.url.pathname === "/" ? 0 : 1}

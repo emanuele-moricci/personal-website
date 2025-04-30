@@ -39,7 +39,7 @@ let { children } = $props();
             {m.experience_pubgit()}
         </Button>
     </div>
-    <div id="tab-content">
+    <div id="tab-content" class="relative overflow-auto py-2 px-4 flex flex-col">
         {@render children()}
     </div>
 </ContainerBox>

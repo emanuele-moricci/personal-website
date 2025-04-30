@@ -1,9 +1,9 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"home_myNameIs": "Il mio nome è...",
-	"locale_en": "Inglese",
-	"locale_es": "Spagnolo",
-	"locale_it": "Italiano",
+	"locale_en-US": "Inglese",
+	"locale_es-ES": "Spagnolo",
+	"locale_it-IT": "Italiano",
 	"home_welcome": "Schermo di benvenuto",
 	"layout_selectLng": "Seleziona una lingua",
 	"home_aboutMe": "Su di me",

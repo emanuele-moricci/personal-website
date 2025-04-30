@@ -14,7 +14,7 @@ import { Combobox } from "$lib/components/ui/combobox/index.js";
     placeholder={m.layout_selectLng()}
     options={locales.map((locale) => ({
         value: locale,
-        label: m[`locale_${locale}`](),
+        label: m[`locale_${(locale)}`](),
     }))}
     defaultValue={getLocale()}
     onchange={newLocale => {

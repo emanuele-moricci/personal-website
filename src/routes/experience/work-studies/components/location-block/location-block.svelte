@@ -4,7 +4,7 @@ import type { BitsDivAttributes, WithElementRef } from "bits-ui";
 export type LocationBlockProps = WithElementRef<BitsDivAttributes> & {
 	isCurrentPosition?: boolean;
 	name: string;
-	time: string; // FIXME: use Dates diff
+	time: string;
 	titles: string[];
 	technologies?: string[];
 	milestones?: string[];

@@ -7,7 +7,7 @@ let { children } = $props();
 </script>
 
 <ContainerBox class="top-20 left-10 bottom-10 right-10 grid grid-cols-[1fr_3fr] divide-x" title={m.about_title()}>
-    <div id="tab-buttons" class="pt-5 p-2 flex flex-col gap-2">
+    <div id="tab-buttons" class="pt-5 p-2 stack gap-2">
         <Button
             data-sveltekit-preload-data="hover"
             href="/experience"
@@ -26,7 +26,6 @@ let { children } = $props();
             data-sveltekit-preload-data="hover"
             href="/experience/technologies"
             variant="outline"
-            class="p-1"
         >
             {m.experience_technologies()}
         </Button>
@@ -34,12 +33,11 @@ let { children } = $props();
             data-sveltekit-preload-data="hover"
             href="/experience/my-github"
             variant="outline"
-            class="p-1"
         >
             {m.experience_pubgit()}
         </Button>
     </div>
-    <div id="tab-content" class="relative overflow-auto py-2 px-4 flex flex-col">
+    <div id="tab-content" class="relative overflow-auto py-2 px-4 stack">
         {@render children()}
     </div>
 </ContainerBox>

@@ -306,6 +306,34 @@
 	}
 }
 
+@layer components {
+	/**
+        |----------------------------------------------|
+        | Class Wrappers
+        |----------------------------------------------|
+    */
+
+	.stack {
+		@apply flex flex-col;
+	}
+
+	.horizontal-row {
+		@apply flex flex-row items-center;
+	}
+
+	.stretched-row {
+		@apply flex flex-row justify-between items-center;
+	}
+
+	.h4-muted {
+		@apply text-sm text-muted-foreground;
+	}
+
+	.ascii-art {
+		@apply text-xs font-mono whitespace-pre m-2 mb-0 animate-glow;
+	}
+}
+
 /**
 	|----------------------------------------------|
 	| Accessibility

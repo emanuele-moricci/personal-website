@@ -1,4 +1,5 @@
 <script lang="ts">
+import ConnectorLine from "@/components/utilities/connectors/connector-line.svelte";
 import LocationBlock from "./components/location-block/location-block.svelte";
 </script>
 
@@ -30,7 +31,7 @@ import LocationBlock from "./components/location-block/location-block.svelte";
         "Leading the Fulfillment Team",
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
               .:-=++*****+==-.                     ..::------:::..
           :-+*################*+=:             .:-------------------:.
        .=*#######**********######**=.       :--------------------------:.
@@ -54,7 +55,7 @@ import LocationBlock from "./components/location-block/location-block.svelte";
              .:=++**####***+=-.                   .:::---------::.
     </pre>
 </LocationBlock>
-<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>
+<ConnectorLine />
 <LocationBlock
     name="Kyklos Group - Remira"
     time="2016 - 2020"
@@ -76,7 +77,7 @@ import LocationBlock from "./components/location-block/location-block.svelte";
         "Lead projects with big players in the Fashion Industry",
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
                               %#*****#%
                             *=-::::::::-==+*#%
                           %-::::::::::::::::::--=+*#%
@@ -99,7 +100,7 @@ import LocationBlock from "./components/location-block/location-block.svelte";
                                         %#*+=====+#
     </pre>
 </LocationBlock>
-<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>
+<ConnectorLine />
 <LocationBlock
     name="Commit Software"
     time="2015"
@@ -116,7 +117,7 @@ import LocationBlock from "./components/location-block/location-block.svelte";
         "Created a web app to control a Pomodoro Timer based on an Arduino",
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+--+@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#++#@@@@@@@@@@@@
 @@@@@%#*##%@@@@@@%#*##%@@@@@@@@@##%@@@%##%@@@@@@@%##%@@@%##%@@@@%%%%@@%%%%%%%%%%
@@ -129,7 +130,7 @@ import LocationBlock from "./components/location-block/location-block.svelte";
 @@@*-:.  .:=#@@*-:. ..-+%@@@@:..:@#...-@*...=@*...#@-...#@:...%@::::@@@@@::::@@@
     </pre>
 </LocationBlock>
-<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>
+<ConnectorLine />
 <LocationBlock
     name="I.T.I.S. Antonio Meucci"
     time="2011 - 2016"
@@ -137,7 +138,7 @@ import LocationBlock from "./components/location-block/location-block.svelte";
         "I.T. Student",
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
                                       .
                           :-:-       -=. =-  ..
                  .   -:   .:.:-      -:---- -=:::

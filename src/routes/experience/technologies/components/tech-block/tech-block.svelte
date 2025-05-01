@@ -12,6 +12,7 @@ export type TechBlockProps = WithElementRef<BitsDivAttributes> & {
 <script lang="ts">
 import { m } from "@/paraglide/messages.js";
 import { cn } from "@/utils";
+import ConnectorBlock from "@/components/utilities/connectors/connector-block.svelte";
 
 let {
 		class: className,
@@ -26,25 +27,25 @@ let {
 </script>
 
 <div bind:this={ref} class={cn("group flex gap-4", className)} {...restProps}>
-    <div class="border border-muted-foreground h-auto w-4 shrink-0 group-hover:border-foreground group-hover:bg-secondary"></div>
-    <div class="flex flex-col">
+    <ConnectorBlock />
+    <div class="stack">
         {@render children?.()}
-        <div class="flex flex-col gap-2 flex-wrap">
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.tech_usedInWork()}</h4>
-                <p class="text-{usedInWork ? 'accent' : 'destructive'}">{usedInWork}</p>
+        <div class="stack gap-2 flex-wrap">
+            <span class="stack">
+                <h4 class="h4-muted">{m.tech_usedInWork()}</h4>
+                <p class="{usedInWork ? 'text-accent' : 'text-destructive'}">{usedInWork}</p>
             </span>
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.tech_name()}</h4>
+            <span class="stack">
+                <h4 class="h4-muted">{m.tech_name()}</h4>
                 <p>{name}</p>
             </span>
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.tech_learnedIn()}</h4>
+            <span class="stack">
+                <h4 class="h4-muted">{m.tech_learnedIn()}</h4>
                 <p>{learnedIn}</p>
             </span>
             {#if subTechnologies.length > 0}
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.tech_subTech()}</h4>
+            <span class="stack">
+                <h4 class="h4-muted">{m.tech_subTech()}</h4>
                 <ul class="flex gap-2 flex-wrap">
                     {#each subTechnologies as technology}
                         <li class="border p-0.5">{technology}</li>

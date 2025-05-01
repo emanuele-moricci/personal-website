@@ -4,7 +4,7 @@ import { page } from "$app/state";
 import { m } from "@/paraglide/messages.js";
 </script>
 
-<a href="/" class="flex items-center gap-1">
+<a href="/" class="horizontal-row gap-1">
 	<img src="{base}/logo.gif" alt="logo" width="35px" />{' '}
 	<span
 		id="home-title"

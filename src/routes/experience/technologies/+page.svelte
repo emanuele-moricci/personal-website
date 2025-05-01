@@ -1,4 +1,5 @@
 <script lang="ts">
+import ConnectorLine from "@/components/utilities/connectors/connector-line.svelte";
 import TechBlock from "./components/tech-block/tech-block.svelte";
 </script>
 
@@ -22,7 +23,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
         "Mantine",
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
                     .:-------::.                .::-------:.
                  .:---------------:.        .:---------------:.
                 :---:.        .:-----:.  .:-----:.        .:---:
@@ -60,7 +61,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
                     .:-------::.                .::-------:.
     </pre>
 </TechBlock>
-<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>
+<ConnectorLine />
 <TechBlock
     name="Svelte"
     learnedIn="2024"
@@ -73,7 +74,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
         "Shadcn/ui",
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
                                          .::---=======---::.
                                      .:-=====================--:.
                                   :-=============================-:.
@@ -125,7 +126,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
 
     </pre>
 </TechBlock>
-<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>
+<ConnectorLine />
 <TechBlock
     usedInWork
     name="Styling"
@@ -140,7 +141,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
         "Lottie",
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.
@@ -183,7 +184,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
        .::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.
     </pre>
 </TechBlock>
-<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>
+<ConnectorLine />
 <TechBlock
     usedInWork
     name="NodeJS"
@@ -198,7 +199,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
         "Jest"
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
                                     .-=++=-.
                                 .:-+++++++===-:
                              .-=+++++++++++======:.
@@ -246,7 +247,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
                                     .:-=+=-.
     </pre>
 </TechBlock>
-<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>
+<ConnectorLine />
 <TechBlock
     usedInWork
     name="PHP"
@@ -259,7 +260,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
         "PHPUnit"
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
                         .::--===++++++++++++++++===--::.
                  .:-==++++++++++++++*****+++++++++++++++++==-:.
             .:=+++++++++++++++++++*=----=++++++++++++++++++++++++=:.
@@ -282,7 +283,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
                          ..::--====++++++++++====--::..
     </pre>
 </TechBlock>
-<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>
+<ConnectorLine />
 <TechBlock
     usedInWork
     name="Amazon Web Services"
@@ -299,7 +300,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
         "S3",
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
          .........                                              ........
       ...............     ....        ......        .....    ..............
       .          .....    .....       ......        ....    ....
@@ -325,7 +326,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
                           ..::-===++++++++++++===-::.
     </pre>
 </TechBlock>
-<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>
+<ConnectorLine />
 <TechBlock
     usedInWork
     name="Databases"
@@ -341,7 +342,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
         "Firebase"
     ]}
 >
-    <pre class="text-xs font-mono whitespace-pre m-2 mb-0 animate-glow">
+    <pre class="ascii-art">
               .::----::.            .:--===--:..:-=+*##%%%%%##*+=:.
          :+#%@@@@@@@@@@@@@%#*=:.:+#@@@@@@%@@@@@@@@@@%**++****##%@@@%*-.
       .+@@@#+==--------==+*##@@@@@#+=---------==+*#%@%#=-::--::---=*%@@#-

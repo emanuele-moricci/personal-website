@@ -1,0 +1,1 @@
+<div class="shrink-0 border-l border-muted-foreground h-20 w-1 ml-2"></div>

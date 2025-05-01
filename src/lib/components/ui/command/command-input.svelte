@@ -11,7 +11,7 @@ let {
 }: CommandPrimitive.InputProps = $props();
 </script>
 
-<div class="flex items-center border-b px-2" data-command-input-wrapper="">
+<div class="horizontal-row border-b px-2" data-command-input-wrapper="">
 	<Search class="mr-2 size-4 shrink-0 opacity-50" />
 	<CommandPrimitive.Input
 		class={cn(

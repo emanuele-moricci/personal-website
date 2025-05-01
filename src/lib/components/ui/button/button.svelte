@@ -96,7 +96,7 @@ export type ButtonProps = WithElementRef<HTMLButtonAttributes> &
 {#snippet loading(isloading: boolean)}
 	{#if isloading}
 		<div class="absolute inset-0 bg-secondary z-10 pointer-events-none"></div>
-		<div class="absolute inset-0 flex items-center justify-center z-20 cursor-progress">
+		<div class="absolute inset-0 horizontal-row justify-center z-20 cursor-progress">
 			<Loading />
 		</div>
 	{/if}

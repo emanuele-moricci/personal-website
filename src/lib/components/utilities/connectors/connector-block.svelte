@@ -1,0 +1,1 @@
+<div class="shrink-0 border border-muted-foreground h-auto w-4 group-hover:border-foreground group-hover:bg-secondary"></div>

@@ -2,9 +2,9 @@
 import { m } from "@/paraglide/messages.js";
 </script>
 
-<div class="flex flex-col flex-wrap gap-2">
+<div class="stack flex-wrap gap-2">
     <h2 class="text-muted-foreground">{m.about_hello()}</h2>
-    <pre class="text-xs font-mono whitespace-pre animate-glow">
+    <pre class="ascii-art m-0">
 ******+=-:.        -%#%%%#%%%%%%%%%%@@@@@%***++++++++++++++++++++++++=+=========
 *******=-:          .:=*%@@@@@@@@@@@@@@@@@#*******+++++++++++++++++++++++=======
 **#*+=:.                 :=%@@@@@@@@@@@@@@#*****+******+++*++++++++++++++==+====
@@ -46,7 +46,7 @@ import { m } from "@/paraglide/messages.js";
     .... ..--::--:.:-=-+*--=::+*-==--=:::=-+:--*+:.:+: -+=++=----------==---::.:
       ..  -+*=-..-=-==-+=:+=+: =+=-=-=-:-:..=+-:+--:-: +#+-*+==++++++=++++++==--
     </pre>
-    <span>
+    <span class="max-w-2/3">
         {m.about_hello_title()} <span class="text-muted-foreground">(⌐ ͡■ ʖ ͡■)</span> <br />
         {m.about_hello_subtitle()}
     </span>

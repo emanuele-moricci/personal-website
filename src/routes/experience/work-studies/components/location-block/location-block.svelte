@@ -14,6 +14,7 @@ export type LocationBlockProps = WithElementRef<BitsDivAttributes> & {
 <script lang="ts">
 import { m } from "@/paraglide/messages.js";
 import { cn } from "@/utils";
+import ConnectorBlock from "@/components/utilities/connectors/connector-block.svelte";
 
 let {
 		class: className,
@@ -30,31 +31,31 @@ let {
 </script>
 
 <div bind:this={ref} class={cn("group flex gap-4", className)} {...restProps}>
-    <div class="border border-muted-foreground h-auto w-4 shrink-0 group-hover:border-foreground group-hover:bg-secondary"></div>
-    <div class="flex flex-col">
+    <ConnectorBlock />
+    <div class="stack">
         {@render children?.()}
-        <div class="flex flex-col gap-2 flex-wrap">
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.workstudy_currentPosition()}</h4>
-                <p class="text-{isCurrentPosition ? 'accent' : 'destructive'}">{isCurrentPosition}</p>
+        <div class="stack gap-2 flex-wrap">
+            <span class="stack">
+                <h4 class="h4-muted">{m.workstudy_currentPosition()}</h4>
+                <p class="{isCurrentPosition ? 'text-accent' : 'text-destructive'}">{isCurrentPosition}</p>
             </span>
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.workstudy_name()}</h4>
+            <span class="stack">
+                <h4 class="h4-muted">{m.workstudy_name()}</h4>
                 <p>{name}</p>
             </span>
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.workstudy_time()}</h4>
+            <span class="stack">
+                <h4 class="h4-muted">{m.workstudy_time()}</h4>
                 <p>{time}</p>
             </span>
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.workstudy_titles()}</h4>
+            <span class="stack">
+                <h4 class="h4-muted">{m.workstudy_titles()}</h4>
                 <p>
                     {titles.join(", ")}
                 </p>
             </span>
             {#if technologies.length > 0}
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.workstudy_technologies()}</h4>
+            <span class="stack">
+                <h4 class="h4-muted">{m.workstudy_technologies()}</h4>
                 <ul class="flex gap-2 flex-wrap">
                     {#each technologies as technology}
                         <li class="border p-0.5">{technology}</li>
@@ -63,8 +64,8 @@ let {
             </span>
             {/if}
             {#if milestones.length > 0}
-            <span class="flex flex-col">
-                <h4 class="text-sm text-muted-foreground">{m.workstudy_milestones()}</h4>
+            <span class="stack">
+                <h4 class="h4-muted">{m.workstudy_milestones()}</h4>
                 <ul class="list-[square] ml-4">
                     {#each milestones as milestone}
                         <li>{milestone}</li>

@@ -31,7 +31,7 @@ let { children } = $props();
 <div class="animate-crtv-flash"></div>
 
 <div class="delay-[0.15s] opacity-0 animate-quick-in">
-    <div class="w-full absolute top-2 left-0 px-3 flex items-center justify-between opacity-0 animate-quick-in delay-200">
+    <div class="w-full absolute top-2 left-0 px-3 horizontal-row justify-between opacity-0 animate-quick-in delay-200">
         <HomeLogo />
         <LocaleSwitcher />
     </div>

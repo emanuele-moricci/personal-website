@@ -37,28 +37,20 @@ $$$$$$$$\ $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\
         </div>
     </div>
 
-    <div class="absolute bottom-3 left-0 right-0 stretched-row">
-        <span class="horizontal-row">
-            <span class="bg-destructive py-1 px-2">
-                NORMAL
+    <div class="absolute bottom-3 left-0 stretched-row text-xs">
+        <span class="horizontal-row gap-0">
+            <span class="bg-destructive py-1 px-2">NORMAL</span>
+            <span class="bg-secondary py-1 px-2 horizontal-row gap-1">
+                <GitBranch size={16} /> main
             </span>
-            <span class="bg-secondary py-1 px-2">
-                <span class="horizontal-row gap-2"><GitBranch size={16} />main</span>
-            </span>
-            <span class="ml-2">
-                routes/+page.svelte
-            </span>
+            <span class="ml-2 hidden sm:block">routes/+page.svelte</span>
         </span>
-        <span class="horizontal-row">
-            <span class="mr-2">
-                utf-8
-            </span>
-            <span class="bg-secondary py-1 px-2">
-                Top
-            </span>
-            <span class="bg-destructive py-1 px-2">
-                1:1
-            </span>
+    </div>
+    <div class="absolute bottom-3 right-0 stretched-row text-xs">
+        <span class="horizontal-row gap-0">
+            <span class="mr-2">utf-8</span>
+            <span class="bg-secondary py-1 px-2">Top</span>
+            <span class="bg-destructive py-1 px-2">1:1</span>
         </span>
     </div>
 </ContainerBox>

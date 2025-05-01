@@ -318,11 +318,11 @@
 	}
 
 	.horizontal-row {
-		@apply flex flex-row items-center;
+		@apply flex flex-row flex-wrap items-center gap-2;
 	}
 
 	.stretched-row {
-		@apply flex flex-row justify-between items-center;
+		@apply flex flex-row flex-wrap justify-between items-center gap-2;
 	}
 
 	.h4-muted {
@@ -330,7 +330,7 @@
 	}
 
 	.ascii-art {
-		@apply text-xs font-mono whitespace-pre m-2 mb-0 animate-glow;
+		@apply overflow-x-auto text-xs font-mono whitespace-pre m-2 mb-0 animate-glow;
 	}
 }
 

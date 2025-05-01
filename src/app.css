@@ -290,7 +290,7 @@
 	}
 
 	.animate-typing-slow {
-		@apply animate-typing;
+		@apply lg:animate-typing;
 		animation-duration: 1s;
 
 		overflow: hidden;
@@ -330,7 +330,7 @@
 	}
 
 	.ascii-art {
-		@apply overflow-x-auto text-xs font-mono whitespace-pre m-2 mb-0 animate-glow;
+		@apply text-[5px] md:text-[10px] lg:text-xs font-mono whitespace-pre m-2 mb-0 animate-glow;
 	}
 }
 

@@ -1,17 +1,9 @@
 import { GITHUB_TOKEN } from "$env/static/private";
 import { PUBLIC_GITHUB_USERNAME } from "$env/static/public";
 import { getLocale } from "$lib/paraglide/runtime";
+import type { GHRepo } from "$lib/types/github";
 
-interface Repo {
-	id: number;
-	name: string;
-	html_url: string;
-	description: string | null;
-	created_at: string;
-	stargazers_count: number;
-	forks_count: number;
-	watchers: number;
-}
+export const prerender = false;
 
 export async function load() {
 	const locale = getLocale();
@@ -27,7 +19,7 @@ export async function load() {
 		throw new Error(`Couldn't load repos: ${res.status} ${res.statusText}`);
 	}
 
-	const repos: Repo[] = await res.json();
+	const repos: GHRepo[] = await res.json();
 
 	return {
 		repos: repos

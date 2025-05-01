@@ -54,5 +54,6 @@ import { m } from "@/paraglide/messages.js";
         <br />
         <br />
         {m.about_hello_other()}
+        {m.about_hello_otherdesc()}
     </span>
 </div>

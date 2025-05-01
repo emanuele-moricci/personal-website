@@ -27,7 +27,7 @@ $$$$$$$$\ $$ | $$ | $$ |\$$$$$$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\
 
     <hr class="mt-5" />
 
-    <div class="mt-6 border px-3 py-2 horizontal-row">
+    <div class="mt-6 border px-3 py-2 horizontal-row flex-col sm:flex-row items-start sm:items-center">
         <h5>### <span class="bg-secondary p-1">{m.home_aboutMe()}</span></h5>
         <div class="sm:ml-auto flex flex-col sm:flex-row sm:justify-end items-start sm:items-center sm:gap-4">
             <Button data-sveltekit-preload-data="hover" href="/experience" variant="ghost" class="p-1"><Lightbulb />{m.home_whatIKnow()}</Button>

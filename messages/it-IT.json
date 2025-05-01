@@ -33,5 +33,6 @@
 	"github_pubcode": "Il codice pubblico per l'intero sito web 🎖️",
 	"github_createdon": "Creato il {when}",
 	"github_theresmore": "...più tutti i miei progetti privati",
-	"about_hello_other": "My other passions include:"
+	"about_hello_other": "Le mie altre passioni sono:",
+	"about_hello_otherdesc": "Giocare a Dungeons & Dragons, disegnare arte digitale, giocare a scherma e costruire computer."
 }

@@ -46,8 +46,13 @@ import { m } from "@/paraglide/messages.js";
     .... ..--::--:.:-=-+*--=::+*-==--=:::=-+:--*+:.:+: -+=++=----------==---::.:
       ..  -+*=-..-=-==-+=:+=+: =+=-=-=-:-:..=+-:+--:-: +#+-*+==++++++=++++++==--
     </pre>
-    <span class="max-w-2/3">
-        {m.about_hello_title()} <span class="text-muted-foreground">(⌐ ͡■ ʖ ͡■)</span> <br />
+    <span class="sm:max-w-2/3">
+        {m.about_hello_title()} <span class="text-muted-foreground text-nowrap">(⌐ ͡■ ʖ ͡■)</span>
+        <br />
+        <br />
         {m.about_hello_subtitle()}
+        <br />
+        <br />
+        {m.about_hello_other()}
     </span>
 </div>

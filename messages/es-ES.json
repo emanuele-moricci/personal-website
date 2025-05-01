@@ -1,8 +1,5 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"home": {
-		"welcomeScreen": "Pantalla de bienvenida"
-	},
 	"home_myNameIs": "Mi nombre es...",
 	"locale_en-US": "Inglés",
 	"locale_es-ES": "Español",
@@ -34,5 +31,6 @@
 	"about_hello_subtitle": "Me encanta experimentar con nuevos lenguajes, plataformas y tecnologías, y también soy muy apasionado por el liderazgo de equipos y la construcción de equipos!",
 	"github_pubcode": "El código público para todo este sitio web 🎖️",
 	"github_createdon": "Creado el {when}",
-	"github_theresmore": "...más todos mis proyectos privados"
+	"github_theresmore": "...más todos mis proyectos privados",
+	"about_hello_other": "My other passions include:"
 }

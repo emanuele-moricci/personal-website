@@ -9,7 +9,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
     learnedIn="2018"
     subTechnologies={[
         "Javascript",
-        "Tavascript",
+        "Typescript",
         "RemixJS",
         "NextJS",
         "Redux - Thunk, Saga, Toolkit, Query",
@@ -67,7 +67,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
     learnedIn="2024"
     subTechnologies={[
         "Javascript",
-        "Tavascript",
+        "Typescript",
         "SvelteKit",
         "Paraglide i18n",
         "Vite",
@@ -191,7 +191,7 @@ import TechBlock from "./components/tech-block/tech-block.svelte";
     learnedIn="2018"
     subTechnologies={[
         "Javascript",
-        "Tavascript",
+        "Typescript",
         "ExpressJS",
         "Apollo GraphQL",
         "Serverless",
